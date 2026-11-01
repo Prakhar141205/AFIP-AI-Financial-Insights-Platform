@@ -1,0 +1,74 @@
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# ==============================
+# Virtual Environments
+# ==============================
+.venv/
+venv/
+env/
+
+# ==============================
+# Environment Variables & Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# IDE & Editor
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================
+# OS Files
+# ==============================
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Jupyter
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Logs
+# ==============================
+*.log
+logs/
+
+# ==============================
+# Testing & Coverage
+# ==============================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==============================
+# Generated Data
+# ==============================
+data/raw_pdfs/*
+data/markdowns/*
+
+# Preserve directory structure
+!data/raw_pdfs/.gitkeep
+!data/markdowns/.gitkeep
+
+# ==============================
+# Database
+# ==============================
+*.db
+*.sqlite3

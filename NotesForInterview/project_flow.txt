@@ -1,0 +1,31 @@
+step 1. make the data folder and two folders inside it first one named markdown and second one raw_pdfs
+2. convert the raw_pdfs to markdown format so
+
+Question1. Why convert raw_pdfs to markdown format 
+Reason: We convert raw PDFs into Markdown to preserve their original structure, such as headings, paragraphs, lists, and tables, making the content easier for AI models to read, understand, and process.
+
+# Requirements.txt 
+
+fastapi==0.136.3              # Builds high-performance REST APIs and handles HTTP requests.
+uvicorn==0.35.0               # Runs the FastAPI application using an ASGI server.
+pydantic==2.11.7               # Validates and manages structured data using Python type hints.
+Jinja2==3.1.6                  # Generates dynamic HTML pages using templates.
+python-dotenv==1.1.1           # Loads environment variables from a .env file.
+openai==2.41.0                 # Provides access to OpenAI models and APIs for LLM-based tasks.
+sqlalchemy==2.0.50             # Provides ORM and SQL toolkit functionality for relational databases.
+psycopg2-binary==2.9.10        # PostgreSQL adapter that enables Python applications to connect to PostgreSQL.
+azure-core==1.35.1             # Provides shared authentication, HTTP pipeline, and core functionality for Azure SDKs.
+azure-search-documents==11.5.3 # Connects to Azure AI Search for document indexing and keyword/vector retrieval.
+langchain-core==1.4.0          # Provides LangChain fundamentals such as prompts, messages, and runnable interfaces.
+langchain-openai==1.2.2        # Integrates OpenAI and Azure OpenAI models with LangChain.
+langchain-experimental==0.4.2  # Provides experimental LangChain components, including semantic document chunking.
+pymupdf4llm==1.27.2.3          # Extracts PDF content and converts it into Markdown for LLM processing.
+python-multipart==0.0.32       # Enables FastAPI to handle file uploads and multipart form data.
+
+
+Step 0: Create env using the uv packet manager
+
+Commands to run 
+1. uv venv (make sure uv is installed in your system and updated (pip install uv))
+2. open the env (source .venv/bin/activate)
+3. uv pip install -r requirements.txt
