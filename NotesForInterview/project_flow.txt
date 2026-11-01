@@ -1,8 +1,3 @@
-step 1. make the data folder and two folders inside it first one named markdown and second one raw_pdfs
-2. convert the raw_pdfs to markdown format so
-
-Question1. Why convert raw_pdfs to markdown format 
-Reason: We convert raw PDFs into Markdown to preserve their original structure, such as headings, paragraphs, lists, and tables, making the content easier for AI models to read, understand, and process.
 
 # Requirements.txt 
 
@@ -29,3 +24,17 @@ Commands to run
 1. uv venv (make sure uv is installed in your system and updated (pip install uv))
 2. open the env (source .venv/bin/activate)
 3. uv pip install -r requirements.txt
+
+
+step 1. make the data folder and two folders inside it first one named markdown and second one raw_pdfs
+2. convert the raw_pdfs to markdown format so
+
+Question1. Why convert raw_pdfs to markdown format 
+Reason: We convert raw PDFs into Markdown to preserve their original structure, such as headings, paragraphs, lists, and tables, making the content easier for AI models to read, understand, and process.
+
+
+Step3 : 
+Why semantic chunking: 
+Ans: Step 3: Semantic Chunking
+
+Instead of splitting documents into fixed-size chunks based on character count or token limits, we divide them into smaller chunks based on their semantic meaning and contextual relationships. This ensures that related information stays together, preserving the context and improving retrieval accuracy in the RAG pipeline.
